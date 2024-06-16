@@ -14,6 +14,8 @@ import data_load
 from device import device
 from plot import plot_original_dataset,loss_plot,image_show
 from const import ngpu, nz, ngf, nc, ndf, batch_size, workers, image_size
+from generator import Generator 
+from discriminator import Discriminator
 
 if __name__ == '__main__':
     #加载数据
@@ -30,8 +32,9 @@ if __name__ == '__main__':
     #绘制生成图像
     image_show(img_list)
     #保存模型
-    netD.save_model('./models')
-    netG.save_model('./models')
+    Generator.save_model(netG,'./models')
+    Discriminator.save(netD,'./models')
+    
     #保存图片
     os.makedirs('./images', exist_ok=True)
     vutils.save_image(img_list[-1], './images/fake_images.png', normalize=True)

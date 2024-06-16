@@ -5,7 +5,7 @@ batch_size = 128
 # 图片尺寸
 image_size = 64
 # 数据load多线程处理数
-workers = 2
+workers = 5
 # 生成器特征数
 ngf = 64
 # 判别器特征数
@@ -16,10 +16,10 @@ nz = 100
 nc=3
 
 # Number of GPUs available. Use 0 for CPU mode.
-ngpu = 0
+ngpu = 1
 
 # Number of training epochs
-num_epochs = 5
+num_epochs = 1
 
 # Learning rate for optimizers
 lr = 0.0002 

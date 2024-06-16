@@ -35,6 +35,7 @@ def get_generator(nz, ngf, nc):
     #  to ``mean=0``, ``stdev=0.02``.
     netG.apply(weights_init)
 
+
     return netG
 
 
