@@ -1,11 +1,11 @@
 #数据路径
 dateset_dir = "/Users/bytedance/Project/personalProject/deepL/apps/dataSet"
 #每次训练的batch大小
-batch_size = 128
+batch_size = 256
 # 图片尺寸
 image_size = 64
 # 数据load多线程处理数
-workers = 5
+workers = 8
 # 生成器特征数
 ngf = 64
 # 判别器特征数
@@ -16,7 +16,7 @@ nz = 100
 nc=3
 
 # Number of GPUs available. Use 0 for CPU mode.
-ngpu = 1
+ngpu = 0
 
 # Number of training epochs
 num_epochs = 1
